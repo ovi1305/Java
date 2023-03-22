@@ -1,0 +1,22 @@
+pipeline{
+    agent any{
+        stages{
+            stage('Build')
+            {
+                echo "Hello from build stage"
+            }
+            stage('Test')
+            {
+                echo "Hello from test stage"
+            }
+            stage('Deploy')
+            {
+                echo "Hello from deploy stage"
+            }
+            stage('Release')
+            {
+                echo "Hello finally the software is ready to get released."
+            }
+        }
+    }
+}
